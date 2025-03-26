@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #ece9e6, #ffffff);
+    text-align: center;
+    padding: 20px;
+}
+
+.loader {
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    margin: 20px 0;
+}
+
+.quote-container {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 600px;
+    padding: 30px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease-in-out;
+}
+
+.quote-container:hover {
+    transform: scale(1.05);
+}
+
+.author-container {
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 15px;
+    color: #555;
+}
+
+.age-container {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.image-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.fetch-quote {
+    margin-top: 30px;
+    padding: 12px 24px;
+    font-size: 18px;
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.fetch-quote:hover {
+    background: linear-gradient(135deg, #0056b3, #00409a);
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    .quote-container {
+        font-size: 22px;
+        padding: 20px;
+        max-width: 90%;
+    }
+    .author-container {
+        font-size: 18px;
+    }
+    .age-container {
+        font-size: 16px;
+    }
+    .fetch-quote {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .image-container img {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .quote-container {
+        font-size: 18px;
+        padding: 15px;
+        max-width: 80%;
+    }
+    .author-container {
+        font-size: 16px;
+    }
+    .age-container {
+        font-size: 14px;
+    }
+    .fetch-quote {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    .image-container img {
+        max-width: 80%;
+    }
+}
